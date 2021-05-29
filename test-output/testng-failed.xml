@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="classes" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="tests" value="testconfig.properties"/>
+  <test thread-count="1" parallel="classes" name="EmployeeMS(failed)">
+    <classes>
+      <class name="EmployeeTest">
+        <methods>
+          <include name="deleteEmployee"/>
+          <include name="teardown"/>
+          <include name="setup"/>
+          <include name="validateEmployee"/>
+        </methods>
+      </class> <!-- EmployeeTest -->
+    </classes>
+  </test> <!-- EmployeeMS(failed) -->
+</suite> <!-- Failed suite [Suite] -->
